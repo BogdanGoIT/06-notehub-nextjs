@@ -49,7 +49,7 @@ export async function deleteNote(noteId: string) {
 }
 
 export async function fetchNoteById(id: string) {
-  const res = await axios.get<Note>(`notes/${id}`, {
+  const res = await axios.get<Note>(`/notes/${id}`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
