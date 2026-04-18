@@ -39,7 +39,7 @@ export default function NotesClient() {
     <div className={css.app}>
       <header className={css.toolbar}>
         {/* Компонент SearchBox */}
-        <SearchBox text={search} onSearch={handleSearch} />
+        <SearchBox value={search} onSearch={handleSearch} />
         {/* Пагінація */}
         {isSuccess && totalPages > 1 && (
           <Pagination totalPages={totalPages} setPage={setCurrentPage} page={currentPage} />
